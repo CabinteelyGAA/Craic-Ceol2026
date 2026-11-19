@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas Craic & Ceol Social 2026 | Cabinteely GAA & Camogie</title>
+
+  <!-- SEO: Keep GitHub Pages URL out of search results & point authority to cabinteelygaa.com -->
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.cabinteelygaa.com/our-news/christmas-craic-ceol-2026" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cabinteely GAA & Camogie" />
+  <meta property="og:title" content="Christmas Craic & Ceol Social 2026 — Cabinteely GAA & Camogie" />
+  <meta property="og:description" content="Join us Friday, December 11th 2026 from 8pm 'til late at Seapoint RFC Clubhouse with live music by Fionn Lowry & Tahlia Torpey. Grab your raffle strips online!" />
+  <meta property="og:url" content="https://www.cabinteelygaa.com/our-news/christmas-craic-ceol-2026" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cabo-green: #006837;
+      --cabo-green-dark: #004725;
+      --cabo-green-light: #009245;
+      --cabo-mint: #eaf6ef;
+      --cabo-gold: #f4b41a;
+      --cabo-gold-dark: #d49606;
+      --cabo-red: #c1121f;
+      --cabo-night: #0b1f16;
+      --cabo-cream: #fcfdf9;
+      --cabo-text: #15241c;
+      --cabo-muted: #4b6357;
+      --card-shadow: 0 12px 28px -6px rgba(0, 71, 37, 0.12), 0 4px 10px -2px rgba(0, 71, 37, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--cabo-cream);
+      color: var(--cabo-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Fredoka', sans-serif;
+      letter-spacing: 0.01em;
+    }
+
+    /* Subtle Festive Twinkle Overlay */
+    #snow-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: -20px;
+      color: #ffffff;
+      text-shadow: 0 0 6px rgba(0, 104, 55, 0.35);
+      user-select: none;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-20px) translateX(0px); opacity: 0.85; }
+      50% { transform: translateY(50vh) translateX(14px); }
+      100% { transform: translateY(105vh) translateX(-10px); opacity: 0.25; }
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: linear-gradient(135deg, var(--cabo-night) 0%, var(--cabo-green-dark) 52%, var(--cabo-green) 100%);
+      border-radius: 24px;
+      padding: 40px 28px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid var(--cabo-gold);
+      box-shadow: 0 20px 40px -12px rgba(0, 50, 26, 0.4);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(244, 180, 26, 0.16) 1.5px, transparent 1.5px);
+      background-size: 26px 26px;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+    }
+
+    @media (max-width: 840px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .event-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(244, 180, 26, 0.18);
+      border: 1px solid var(--cabo-gold);
+      color: #ffe8a3;
+      padding: 6px 15px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3.25rem);
+      line-height: 1.12;
+      margin-bottom: 14px;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero h1 span {
+      color: var(--cabo-gold);
+    }
+
+    .hero-lead {
+      font-size: 1.08rem;
+      color: #e4f5ec;
+      margin-bottom: 22px;
+      max-width: 580px;
+    }
+
+    @media (max-width: 840px) {
+      .hero-lead {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .key-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    @media (max-width: 520px) {
+      .key-facts {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .fact-chip {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+    }
+
+    .fact-chip strong {
+      display: block;
+      color: var(--cabo-gold);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media (max-width: 840px) {
+      .hero-actions {
+        justify-content: center;
+      }
+    }
+
+    /* Poster Card inside Hero */
+    .poster-frame {
+      background: #102a1d;
+      border-radius: 18px;
+      padding: 10px;
+      border: 2px solid var(--cabo-gold);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .poster-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .poster-fallback {
+      padding: 28px 18px;
+      text-align: center;
+      background: linear-gradient(160deg, #163827, #0b1f16);
+      border-radius: 12px;
+      color: #ffffff;
+    }
+
+    /* Countdown Strip */
+    .countdown-strip {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 18px 22px;
+      margin-top: -18px;
+      position: relative;
+      z-index: 5;
+      box-shadow: var(--card-shadow);
+      border: 2px solid #d7ece0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .cd-title {
+      font-weight: 800;
+      color: var(--cabo-green-dark);
+      font-size: 1rem;
+    }
+
+    .cd-boxes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .cd-unit {
+      background: var(--cabo-mint);
+      border: 1px solid #bfe0ce;
+      border-radius: 12px;
+      padding: 8px 14px;
+      text-align: center;
+      min-width: 66px;
+    }
+
+    .cd-unit span {
+      display: block;
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--cabo-green-dark);
+      line-height: 1.1;
+    }
+
+    .cd-unit small {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--cabo-muted);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 13px 22px;
+      border-radius: 12px;
+      font-size: 0.96rem;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      background: var(--cabo-gold);
+      color: #1c1400;
+      box-shadow: 0 6px 16px rgba(244, 180, 26, 0.35);
+    }
+
+    .btn-gold:hover {
+      background: var(--cabo-gold-dark);
+    }
+
+    .btn-green {
+      background: var(--cabo-green);
+      color: #ffffff;
+    }
+
+    .btn-green:hover {
+      background: var(--cabo-green-dark);
+    }
+
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 2px solid rgba(255, 255, 255, 0.45);
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    /* Section Headers */
+    .section-head {
+      text-align: center;
+      margin: 44px 0 24px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.7rem, 3vw, 2.25rem);
+      color: var(--cabo-green-dark);
+      margin-bottom: 6px;
+    }
+
+    .section-head p {
+      color: var(--cabo-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Raffle Ticket Cards */
+    .raffle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .ticket-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 28px 24px;
+      box-shadow: var(--card-shadow);
+      border: 2px solid #d7ece0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ticket-card.featured {
+      border: 3px solid var(--cabo-gold);
+      background: linear-gradient(180deg, #fffdf6 0%, #ffffff 45%);
+    }
+
+    .best-value-badge {
+      position: absolute;
+      top: -14px;
+      right: 22px;
+      background: var(--cabo-red);
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 14px;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(193, 18, 31, 0.3);
+    }
+
+    .ticket-price {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--cabo-green-dark);
+      margin: 8px 0 12px;
+    }
+
+    .ticket-price small {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--cabo-muted);
+    }
+
+    .ticket-perks {
+      list-style: none;
+      margin: 14px 0 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--cabo-text);
+    }
+
+    .ticket-perks li::before {
+      content: "🎟️ ";
+    }
+
+    .deadline-banner {
+      margin-top: 18px;
+      background: #fef6e0;
+      border: 1px solid #f4d27a;
+      color: #704d00;
+      border-radius: 14px;
+      padding: 12px 18px;
+      text-align: center;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    /* Two Column Info + Interactive Song Poll */
+    .info-poll-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 38px;
+    }
+
+    @media (max-width: 820px) {
+      .info-poll-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .panel-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: var(--card-shadow);
+      border: 2px solid #d7ece0;
+    }
+
+    .panel-card h3 {
+      font-size: 1.45rem;
+      color: var(--cabo-green-dark);
+      margin-bottom: 12px;
+    }
+
+    .schedule-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .schedule-list li {
+      background: #f5faf7;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border-left: 4px solid var(--cabo-green);
+      font-size: 0.94rem;
+    }
+
+    /* Interactive Song Poll */
+    .poll-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 14px 0 18px;
+    }
+
+    .poll-btn {
+      width: 100%;
+      text-align: left;
+      background: #f6fbf8;
+      border: 2px solid #cde5d7;
+      border-radius: 12px;
+      padding: 11px 14px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-weight: 700;
+      color: var(--cabo-text);
+      transition: border-color 0.15s ease;
+    }
+
+    .poll-btn:hover {
+      border-color: var(--cabo-green);
+    }
+
+    .poll-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 146, 69, 0.15);
+      z-index: 0;
+      transition: width 0.4s ease;
+    }
+
+    .poll-label {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Share & Past Archive Footer */
+    .share-strip {
+      margin-top: 38px;
+      background: var(--cabo-mint);
+      border: 2px solid #bfe0ce;
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .share-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 14px 0 18px;
+    }
+
+    .archive-row {
+      border-top: 1px solid #c5e3d2;
+      padding-top: 14px;
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: var(--cabo-muted);
+    }
+
+    .archive-row a {
+      color: var(--cabo-green-dark);
+      font-weight: 700;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="snow-layer" aria-hidden="true"></div>
+
+  <div class="wrapper">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="event-pill">🎄 Cabinteely GAA &amp; Camogie Night Out</div>
+          <h1>Christmas <span>Craic &amp; Ceol</span> Social 2026</h1>
+          <p class="hero-lead">
+            Get the team WhatsApp groups together! Join players, parents, coaches, and friends for our festive club night out with live music, spot prizes, and our annual Christmas Raffle.
+          </p>
+
+          <div class="key-facts">
+            <div class="fact-chip">
+              <strong>📅 Date &amp; Time</strong>
+              Friday, Dec 11th 2026 • 8pm 'til Late
+            </div>
+            <div class="fact-chip">
+              <strong>📍 Venue</strong>
+              Seapoint RFC Clubhouse
+            </div>
+            <div class="fact-chip">
+              <strong>🎸 Live Music</strong>
+              Fionn Lowry &amp; Tahlia Torpey
+            </div>
+            <div class="fact-chip">
+              <strong>🎟️ Admission &amp; Raffle</strong>
+              Free Entry • Raffle Strips Online
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#raffle" class="btn btn-gold">🎟️ Get Raffle Tickets</a>
+            <a href="https://maps.google.com/?q=Seapoint+Rugby+Club+Churchview+Road+Killiney" target="_blank" rel="noopener" class="btn btn-outline-light">📍 Directions to Seapoint RFC</a>
+          </div>
+        </div>
+
+        <!-- Event Poster Card -->
+        <div>
+          <div class="poster-frame">
+            <img
+              src="Christmas.jpeg"
+              alt="Christmas Craic & Ceoil Social 2026 Poster - Seapoint RFC Clubhouse, Friday December 11th 2026, Music by Fionn Lowry & Tahlia Torpey"
+              onerror="this.style.display='none'; document.getElementById('posterFallback').style.display='block';"
+            />
+            <div id="posterFallback" class="poster-fallback" style="display: none;">
+              <div style="font-size: 2.4rem; margin-bottom: 8px;">🎅🎸🎄</div>
+              <h3 style="color: var(--cabo-gold); font-size: 1.4rem; margin-bottom: 6px;">Christmas Craic &amp; Ceoil Social</h3>
+              <p style="font-size: 0.92rem; color: #d8efe2;">
+                <strong>Seapoint RFC Clubhouse</strong><br>
+                Friday, December 11th 2026<br>
+                8pm 'til Late<br>
+                Live Music: Fionn Lowry &amp; Tahlia Torpey
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Countdown Bar -->
+    <div class="countdown-strip">
+      <div class="cd-title">⏳ Countdown to Throw-In at Seapoint RFC:</div>
+      <div class="cd-boxes">
+        <div class="cd-unit"><span id="cd-days">--</span><small>Days</small></div>
+        <div class="cd-unit"><span id="cd-hours">--</span><small>Hours</small></div>
+        <div class="cd-unit"><span id="cd-mins">--</span><small>Mins</small></div>
+        <div class="cd-unit"><span id="cd-secs">--</span><small>Secs</small></div>
+      </div>
+    </div>
+
+    <!-- Raffle Tickets Section -->
+    <section id="raffle">
+      <div class="section-head">
+        <h2>🎟️ Club Christmas Raffle Tickets</h2>
+        <p>Can't make it on the night or want to beat the queue? Grab your raffle strips online via ClubZap—all proceeds support Cabinteely GAA &amp; Camogie teams.</p>
+      </div>
+
+      <div class="raffle-grid">
+        <!-- 1 Strip Option -->
+        <article class="ticket-card">
+          <div>
+            <span style="font-weight: 800; color: var(--cabo-green); text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.05em;">Single Entry</span>
+            <h3 style="font-size: 1.5rem; color: var(--cabo-green-dark); margin-top: 4px;">Christmas Craic &amp; Ceol (1 Strip)</h3>
+            <div class="ticket-price">€2.00 <small>/ 1 strip of tickets</small></div>
+            <ul class="ticket-perks">
+              <li>Entered into the live draw on Friday, Dec 11th</li>
+              <li>Instant confirmation via ClubZap</li>
+              <li>Supports juvenile &amp; adult club equipment</li>
+            </ul>
+          </div>
+          <a href="https://cabinteelygaa.clubzap.com/products/32686/purchases/new" target="_blank" rel="noopener" class="btn btn-green" style="width: 100%;">
+            Buy 1 Strip (€2.00) on ClubZap ➡️
+          </a>
+        </article>
+
+        <!-- 3 Strips Option -->
+        <article class="ticket-card featured">
+          <span class="best-value-badge">⭐ Most Popular</span>
+          <div>
+            <span style="font-weight: 800; color: #9a6b00; text-transform: uppercase; font-size: 0.82rem; letter-spacing: 0.05em;">Triple Your Chances</span>
+            <h3 style="font-size: 1.5rem; color: var(--cabo-green-dark); margin-top: 4px;">Christmas Craic &amp; Ceol (3 Strips)</h3>
+            <div class="ticket-price">€5.00 <small>/ 3 strips of tickets</small></div>
+            <ul class="ticket-perks">
+              <li><strong>3 full strips</strong> entered into the Christmas Draw</li>
+              <li>Save €1 compared to buying single strips</li>
+              <li>You don't need to be in the room to win!</li>
+            </ul>
+          </div>
+          <a href="https://cabinteelygaa.clubzap.com/products/32687/purchases/new" target="_blank" rel="noopener" class="btn btn-gold" style="width: 100%;">
+            Buy 3 Strips (€5.00) on ClubZap ➡️
+          </a>
+        </article>
+      </div>
+
+      <div class="deadline-banner">
+        ⏰ <strong>Online Ticket Cutoff:</strong> Online raffle strips can be purchased on ClubZap up until <strong>Friday, 11th December 2026</strong>.
+        <a href="https://cabinteelygaa.clubzap.com/categories/fundraising/products" target="_blank" rel="noopener" style="color: var(--cabo-green-dark); font-weight: 800; margin-left: 6px;">View all ClubZap Fundraising Products →</a>
+      </div>
+    </section>
+
+    <!-- Venue Details & Song Request Poll -->
+    <section class="info-poll-grid">
+      <div class="panel-card">
+        <h3>🍻 What to Expect on the Night</h3>
+        <ul class="schedule-list">
+          <li><strong>8:00 PM — Doors &amp; Welcome:</strong> Arrive early, grab a drink at the Seapoint RFC bar, and catch up with coaches &amp; parents across all age groups.</li>
+          <li><strong>9:00 PM — Live Music Kickoff:</strong> Brilliant live set from <strong>Fionn Lowry &amp; Tahlia Torpey</strong> with festive favourites and sing-along classics.</li>
+          <li><strong>10:30 PM — Monster Christmas Raffle Draw:</strong> Live draw for all online and on-the-night raffle strips.</li>
+          <li><strong>Late — Craic &amp; Ceol Continues:</strong> Dancing and festive cheer 'til late!</li>
+        </ul>
+        <a href="https://maps.google.com/?q=Seapoint+Rugby+Club+Churchview+Road+Killiney" target="_blank" rel="noopener" class="btn btn-green" style="width: 100%;">
+          🗺️ Open Seapoint RFC in Google Maps
+        </a>
+      </div>
+
+      <div class="panel-card">
+        <h3>🎶 Clubhouse Setlist Poll</h3>
+        <p style="font-size: 0.94rem; color: var(--cabo-muted);">
+          What tune has to be played by Fionn &amp; Tahlia on the night? Cast your vote!
+        </p>
+
+        <div class="poll-options" id="pollOptions">
+          <button class="poll-btn" type="button" data-idx="0">
+            <div class="poll-bar" style="width: 38%;"></div>
+            <div class="poll-label"><span>🎅 Fairytale of New York</span><strong class="poll-pct">38%</strong></div>
+          </button>
+          <button class="poll-btn" type="button" data-idx="1">
+            <div class="poll-bar" style="width: 27%;"></div>
+            <div class="poll-label"><span>🎸 Wagon Wheel / Irish Folk Classics</span><strong class="poll-pct">27%</strong></div>
+          </button>
+          <button class="poll-btn" type="button" data-idx="2">
+            <div class="poll-bar" style="width: 21%;"></div>
+            <div class="poll-label"><span>🎄 All I Want for Christmas Is You</span><strong class="poll-pct">21%</strong></div>
+          </button>
+          <button class="poll-btn" type="button" data-idx="3">
+            <div class="poll-bar" style="width: 14%;"></div>
+            <div class="poll-label"><span>🕺 Mr. Brightside (Late Night Anthem)</span><strong class="poll-pct">14%</strong></div>
+          </button>
+        </div>
+        <p id="pollThanks" style="font-size: 0.88rem; font-weight: 700; color: var(--cabo-green); min-height: 22px;"></p>
+      </div>
+    </section>
+
+    <!-- Share & Archives -->
+    <footer class="share-strip">
+      <h3 style="color: var(--cabo-green-dark); font-size: 1.35rem;">📲 Spread the Word to Your Team Group!</h3>
+      <p style="color: var(--cabo-muted); font-size: 0.94rem;">Share the night out details and raffle link in your squad WhatsApp chat.</p>
+
+      <div class="share-buttons">
+        <a
+          href="https://wa.me/?text=🎄%20Cabinteely%20GAA%20%26%20Camogie%20Christmas%20Craic%20%26%20Ceol%20Social!%20Friday%20Dec%2011th%202026%20from%208pm%20at%20Seapoint%20RFC%20with%20live%20music%20by%20Fionn%20Lowry%20%26%20Tahlia%20Torpey.%20Grab%20your%20raffle%20tickets%20here%3A%20https%3A%2F%2Fwww.cabinteelygaa.com%2Four-news%2Fchristmas-craic-ceol-2026"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-green"
+        >
+          💬 Share on WhatsApp
+        </a>
+        <button id="copyLinkBtn" type="button" class="btn btn-gold">🔗 Copy Event Link</button>
+      </div>
+
+      <div class="archive-row">
+        Previous Years &amp; Hub:
+        <a href="https://cabinteelygaa.com/our-news/christmas-2026" target="_top">Christmas Hub 2026</a> •
+        <a href="https://cabinteelygaa.com/our-news/christmas-craic-ceol-2025" target="_top">Craic &amp; Ceol 2025</a> •
+        <a href="https://cabinteelygaa.com/our-news/christmas-craic-ceol-social" target="_top">Craic &amp; Ceol Archive</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    /* 1. Gentle Snowfall */
+    const snowLayer = document.getElementById('snow-layer');
+    const flakes = ['❄', '❅', '•'];
+    for (let i = 0; i < 26; i++) {
+      const s = document.createElement('span');
+      s.className = 'snowflake';
+      s.textContent = flakes[i % flakes.length];
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.fontSize = (Math.random() * 11 + 9) + 'px';
+      s.style.animationDuration = (Math.random() * 8 + 7) + 's';
+      s.style.animationDelay = (Math.random() * 6) + 's';
+      snowLayer.appendChild(s);
+    }
+
+    /* 2. Live Countdown to Dec 11, 2026 20:00 */
+    function updateEventCountdown() {
+      const eventTime = new Date('December 11, 2026 20:00:00').getTime();
+      const diff = eventTime - Date.now();
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent = '0';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-mins').textContent = '00';
+        document.getElementById('cd-secs').textContent = '00';
+        return;
+      }
+      document.getElementById('cd-days').textContent = Math.floor(diff / (1000 * 60 * 60 * 24));
+      document.getElementById('cd-hours').textContent = String(Math.floor((diff / (1000 * 60 * 60)) % 24)).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(Math.floor((diff / 1000 / 60) % 60)).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+    }
+    setInterval(updateEventCountdown, 1000);
+    updateEventCountdown();
+
+    /* 3. Interactive Setlist Poll */
+    const votes = [19, 14, 11, 7];
+    let hasVoted = false;
+    document.querySelectorAll('.poll-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (hasVoted) return;
+        hasVoted = true;
+        const idx = parseInt(btn.dataset.idx, 10);
+        votes[idx] += 1;
+        const total = votes.reduce((a, b) => a + b, 0);
+
+        document.querySelectorAll('.poll-btn').forEach((b, i) => {
+          const pct = Math.round((votes[i] / total) * 100);
+          b.querySelector('.poll-bar').style.width = pct + '%';
+          b.querySelector('.poll-pct').textContent = pct + '%';
+          if (i === idx) b.style.borderColor = '#006837';
+        });
+        document.getElementById('pollThanks').textContent = '✅ Vote counted! See you on the dancefloor at Seapoint RFC!';
+      });
+    });
+
+    /* 4. Copy Event Link */
+    document.getElementById('copyLinkBtn').addEventListener('click', function () {
+      const url = 'https://www.cabinteelygaa.com/our-news/christmas-craic-ceol-2026';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url);
+      }
+      this.textContent = '✅ Link Copied!';
+      setTimeout(() => { this.textContent = '🔗 Copy Event Link'; }, 2500);
+    });
+  </script>
+</body>
+</html>
